@@ -1,0 +1,29 @@
+{
+  "name": "egroupware-mcp-server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server for EGroupware integration",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "mcp",
+    "egroupware",
+    "claude",
+    "calendar",
+    "contacts",
+    "tasks"
+  ],
+  "author": "Amir Dehestani",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.1",
+    "axios": "^1.6.0",
+    "dotenv": "^17.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
