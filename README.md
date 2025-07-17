@@ -1,4 +1,4 @@
-# EGroupware MCP Server
+# EGroupware MCP Server for Claude Desktop
 
 A Model Context Protocol (MCP) server that provides Claude Desktop integration with EGroupware functionality.
 
@@ -26,7 +26,7 @@ Create a `.env` file in the project root with your EGroupware credentials:
 
 ```env
 # EGroupware Configuration
-EGROUPWARE_URL=https://your-egroupware-instance.com
+EGROUPWARE_URL=https://your-egroupware-instance.com/egw/groupdav.php/username
 EGROUPWARE_USERNAME=your-username
 EGROUPWARE_PASSWORD=your-password
 
