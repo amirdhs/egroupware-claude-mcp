@@ -8,7 +8,7 @@ A Model Context Protocol (MCP) server that provides Claude Desktop integration w
 - **Contact Management**: Create and search contacts in the addressbook
 - **Task Management**: Create and manage tasks in InfoLog
 - **Email**: Send emails through EGroupware
-- **Test Mode**: Mock responses for testing without EGroupware connection
+
 
 ## Installation
 
@@ -154,19 +154,7 @@ To use this MCP server with Claude Desktop:
 └── README.md         # This file
 ```
 
-### Adding New Tools
 
-1. Define the tool schema in the `tools` array
-2. Add the tool handler in the `CallToolRequestSchema` handler
-3. Add mock responses in `getMockResponse()` for test mode
-4. Update this README with documentation
-
-## Security
-
-- Never commit your `.env` file to version control
-- Use strong passwords for your EGroupware credentials
-- Consider using API keys instead of passwords when available
-- The server accepts connections only via stdio transport
 
 ## Troubleshooting
 
@@ -177,25 +165,7 @@ If you're getting authentication errors:
 1. Verify your EGroupware URL, username, and password in `.env`
 2. Check if your EGroupware instance is accessible
 3. Enable TEST_MODE to verify the MCP integration works
-4. Check EGroupware logs for authentication failures
 
-### Connection Issues
-
-- Ensure the EGROUPWARE_URL is correct (without trailing slashes)
-- Check if the EGroupware JSON-RPC API is enabled
-- Verify network connectivity to your EGroupware instance
-
-## License
-
-MIT License - see LICENSE file for details.
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
 
 ## Support
 
